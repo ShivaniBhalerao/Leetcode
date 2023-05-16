@@ -8,13 +8,14 @@ public class Leetcode88 {
         while(ptr2>=0){
             if(ptr1>=0 && nums1[ptr1]>nums2[ptr2]){
                 nums1[ptr]=nums1[ptr1];
+                ptr--;
                 ptr1--;
             }
             else{
                 nums1[ptr]=nums2[ptr2];
+                ptr--;
                 ptr2--;
             }
-            ptr--;
         }
     }
 }
